@@ -1,0 +1,16 @@
+
+
+<div class="container">
+  <h1>home works!</h1>
+  <div  *ngIf="boxDisplay">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nostrum ratione qui perferendis,
+      aliquam suscipit nam, illum eos aliquid corrupti mollitia facilis officiis optio, doloremque nulla odit
+       voluptate quam explicabo.</p>
+  </div>
+
+
+      <div class="my-4 d-flex gap-3">
+        <button class="btn btn-secondary" *ngIf="boxDisplay" (click)="boxHidden()">Hide this</button>
+        <button class="btn btn-primary"*ngIf="!boxDisplay" (click)="boxHidden()">Show desc</button>
+      </div>
+</div>

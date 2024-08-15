@@ -1,0 +1,29 @@
+p{
+  font-family: 'Courier New', Courier, monospace;
+}
+.h-full{
+  min-height: 87.5vh;
+}
+.items-content{
+  display: flex;
+  @media(max-width:1024px){
+    flex-direction: column;
+  }
+  .item-start{
+    flex: 1;
+    background-color: blueviolet
+  }
+  .item-center{
+    flex: 2;
+    background-color: antiquewhite
+  }
+  .item-end{
+    flex: 1;
+    background-color: cadetblue;
+  }
+  .item{
+    @media(max-width:1024px){
+      flex: 1;
+    }
+  }
+}
